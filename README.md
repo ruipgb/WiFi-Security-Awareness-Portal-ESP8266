@@ -82,6 +82,7 @@ Captive-Portal/
 │ └── millennium.html
 │ └── amazon.html
 ├── README.md
+├── platform.ini
 
 ---
 
